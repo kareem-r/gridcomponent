@@ -1,0 +1,247 @@
+.cards{
+margin: auto;
+    width: 1260px;
+    height: 600px;
+    background-color: #edf2f8;
+    display: grid;
+grid-template-columns: repeat(8,150px);
+grid-template-rows:300px 300px;
+gap: 5px 5px;
+padding-bottom: 20px;
+
+}
+.one{
+    grid-column: 1/5;
+line-height: 1;
+
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #733fc8;
+   }
+   .one .info .header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+   }
+   .one .info .header .img img{
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+   }
+   .one .info .header .text h2{
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+   }
+   .one .info .header .text p{
+    font-size: 12px;
+    font-weight: bold;
+    color: #949eb0;
+   }
+.one .info .text h4{
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+}
+.one .info .text p{
+    font-size: 15px;
+    color: #949eb0;
+}
+/*end one*/
+.two{
+    grid-column: 5/7;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #49556b;
+    line-height: 1;
+}
+.two .info .header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+   }
+   .two .info .header .img img{
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+   }
+   .two .info .header .text h2{
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+   }
+   .one .info .header .text p{
+    font-size: 12px;
+    font-weight: bold;
+    color: #949eb0;
+   }
+   .two .info .text h4{
+    font-size: 21px;
+    color: white;
+    font-weight: bold;
+}
+.two .info .text p{
+    font-size: 17px;
+    color: #949eb0;
+}
+/*end two*/
+.three{
+    grid-column: 1/3;
+grid-row: 2/4;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: white;
+    line-height: 1;
+}
+.three .info .header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+   }
+   .three .info .header .img img{
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+   }
+   .three .info .header .text h2{
+    font-size: 14px;
+    font-weight: bold;
+   }
+   .three .info .header .text p{
+    font-size: 12px;
+    font-weight: bold;
+    color: #949eb0;
+   }
+   .three .info .text h4{
+    font-size: 25px;
+    font-weight: bold;
+}
+.three .info .text p{
+    font-size: 17px;
+    color: #949eb0;
+}
+/*end three*/
+.four{
+    grid-column: 3/7;
+line-height: 1.2;
+
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #18202d;
+   }
+   .four .info .header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+   }
+   .four .info .header .img img{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #733fc8;
+    border-radius: 50%;
+   }
+   .four .info .header .text h2{
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+   }
+   .four .info .header .text p{
+    font-size: 12px;
+    font-weight: bold;
+    color: #949eb0;
+   }
+   .four .info .text h4{
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+}
+.four .info .text p{
+    font-size: 15px;
+    color: #949eb0;
+    padding-right: 15px;
+}
+/*end four*/
+.five{
+    grid-column: 7/9;
+    grid-row: 1/3 ;
+    line-height: 1;
+
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color:white;
+ 
+}
+.five .info .header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+   }
+
+.five .info .header .img img{
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 50%;
+   }
+   .five .info .header .text h2{
+    font-size: 14px;
+    font-weight: bold;
+   }
+   .five .info .header .text p{
+    font-size: 12px;
+    font-weight: bold;
+    color: #949eb0;
+   }
+   .five .info .text h4{
+    font-size: 22px;
+    font-weight: bold;
+}
+.five .info .text p{
+    font-size: 15px;
+    color: #949eb0;
+    padding-right: 32px;
+}
+/*end five*/
+@media(max-width:481px){
+    .cards{
+        grid-template-columns: repeat(1,339px);
+        grid-template-rows: repeat(1,1fr);
+        justify-content: center;
+        height: fit-content;
+        padding-bottom: 80px;
+}
+    .card{
+        height: fit-content;
+    }
+    
+    .one{
+        grid-row: 1;
+        grid-column: 1;    
+    }
+        .two{
+            grid-row: 2;
+            grid-column: 1;
+        }
+        .three{
+            grid-row: 3;
+            grid-column: 1;
+        }
+        .four{
+            grid-row: 4;
+            grid-column: 1;
+        }
+        .five{
+            grid-row: 5;
+            grid-column: 1;
+        }
+}
+@media(max-width:206px){
+    .cards{
+        justify-content: flex-start;
+    }
+}
+
+
